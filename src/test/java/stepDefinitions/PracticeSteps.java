@@ -30,7 +30,7 @@ public class PracticeSteps {
 		driver.get("https://www.google.com");
 		int numberOfGoogleImages = practicePage.FindCountOfGoogleImage();
 		
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		Assert.assertTrue(numberOfGoogleImages > 0, "Login page not populated correctly. ");
 		System.out.println("User is in User open it. Number of elements with google image = "+ numberOfGoogleImages);
 		
