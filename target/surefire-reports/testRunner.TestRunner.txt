@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: testRunner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.598 s - in testRunner.TestRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.697 s <<< FAILURE! - in testRunner.TestRunner
+testRunner.TestRunner.runScenario["Want to open google.com", "practice"](1)  Time elapsed: 16.813 s  <<< FAILURE!
+java.lang.AssertionError: Login page not populated correctly.  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.PracticeSteps.user_open_it(PracticeSteps.java:36)
+	at ✽.User open it(file:///C:/Users/it200/eclipse-workspace/org.practice_TestNG.com/src/test/java/features/practice.feature:7)
+
