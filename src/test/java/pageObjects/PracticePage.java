@@ -7,12 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import driverManager.DriverFactory;
+
 public class PracticePage {
 	
 	WebDriver driver;
 
-	public PracticePage(WebDriver _driver) {
-		driver = _driver;
+	public PracticePage() {
+		driver = DriverFactory.getDriver();
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -22,4 +24,5 @@ public class PracticePage {
 		List<WebElement> googleImages = driver.findElements(googleImage);
 		return googleImages.size();
 	}
+	
 }

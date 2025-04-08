@@ -1,3 +1,4 @@
+pageObjects\PracticePage.class
 stepDefinitions\PracticeSteps.class
 testRunner\TestRunner.class
-pageObjects\PracticePage.class
+stepDefinitions\PracticeSteps$1.class
